@@ -8,8 +8,9 @@ import org.springframework.cloud.config.server.EnableConfigServer;
 @SpringBootApplication
 @EnableConfigServer
 //Followed the below steps for git initialization.
-// Not we need to add and commit if we are going to 
+//Not we need to add and commit if we are going to 
 //https://howtodoinjava.com/spring-cloud/spring-cloud-config-server-git/
+//We need to just replace it with remote git url to make it working.
 public class PGCloudConfig {
 	
 	public static void main(String[] args) {
