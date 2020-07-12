@@ -20,4 +20,5 @@ dependencies {
     compile project(':pg-exp-eureka-server')
 	compile project(':pg-exp-expense')
 	compile project(':pg-exp-gateway')
+	compile project(':pg-exp-cloud-config')
 }
