@@ -21,4 +21,5 @@ dependencies {
 	compile project(':pg-exp-expense')
 	compile project(':pg-exp-gateway')
 	compile project(':pg-exp-cloud-config')
+	compile project(':pg-exp-expense-sleuth')
 }
