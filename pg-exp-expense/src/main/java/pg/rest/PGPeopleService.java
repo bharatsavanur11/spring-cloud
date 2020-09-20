@@ -1,5 +1,7 @@
 package pg.rest;
 
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,9 +13,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
-
-import com.netflix.discovery.EurekaClient;
-import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 
 
 @EnableCircuitBreaker
@@ -28,7 +27,7 @@ public class PGPeopleService {
 	private RestTemplate peopleServiceTemplate;
 
 	
-	@Value("${user.role}")
+	//@Value("${user.role}")
 	private String role;
 
 	@GetMapping("getHello")
